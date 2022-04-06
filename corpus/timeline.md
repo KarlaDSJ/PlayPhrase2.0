@@ -16,9 +16,9 @@
 
 //UCshVTOdmZLdLj8LTV1j_0uw tedespañol
 //UCZcvCpFcLxOKGbMocVgLjEA kurzgesagt
-//disneyplusla
-//netflixanime
-//31minutostv
+//UC3uPK6zOTe0HOfcIkuzII0Q disneyplusla
+//UCBSs9x2KzSLhyyA9IKyt4YA netflixanime
+//UCrVhY_d0L0qayRhMsRlPBOA 31minutostv
 //UCJQQVLyM6wtPleV4wFBK06g visualpolitik
 // UC_Zc2fmbDpu_arkwvCDcX5g cocina
 // UCyQqzYXQBUWgBTn4pw_fFSQ auronplay
