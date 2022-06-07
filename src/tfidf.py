@@ -118,7 +118,7 @@ class TFIDF():
             max = len(text) if len(text) > max else max
         return max
     
-    def __do_padding(self, vector, t):
+    def do_padding(self, vector, t):
         '''
         Agrega 0 al vector si no es del tamaño t 
 
@@ -126,7 +126,7 @@ class TFIDF():
             vector (lst): lista de tamaño diferente
             t (int): Tamaño esperado del vector
         '''
-        for i in range(0, t - len(vector)):
+        for _ in range(0, t - len(vector)):
             vector.append(0)
     
     def get_tfid_vectors(self, document=True):
@@ -153,7 +153,7 @@ class TFIDF():
                         elif s['text'] != []:
                             vector = list(self.tfidf[i].values())
                             i += 1
-                        self.__do_padding(vector, max)
+                        self.do_padding(vector, max)
                         s["tfid"] = vector
     
     def recover_documents(self, query):
