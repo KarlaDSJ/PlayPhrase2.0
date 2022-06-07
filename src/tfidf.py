@@ -108,26 +108,6 @@ class TFIDF():
                 else:
                     self.__tfidf.append(tfidf_doc)
         pickle.dump(self.__tfidf, open(path, "wb"))
-
-    def get_max(self):
-        '''
-        Obtiene el tamaño de la oración más larga en el corpus
-        '''
-        max = 0
-        for text in self.data.all_subtitles:
-            max = len(text) if len(text) > max else max
-        return max
-    
-    def do_padding(self, vector, t):
-        '''
-        Agrega 0 al vector si no es del tamaño t 
-
-        Args:
-            vector (lst): lista de tamaño diferente
-            t (int): Tamaño esperado del vector
-        '''
-        for _ in range(0, t - len(vector)):
-            vector.append(0)
     
     def get_tfid_vectors(self, document=True):
         '''
@@ -137,8 +117,6 @@ class TFIDF():
         Args:
             do
         '''
-        max = self.get_max()
-        print("Longitud de la oración más larga: ",max)
         i = 0
         #Iteramos sobre los canales
         for chanel in tqdm(self.data.corpus):
@@ -153,7 +131,6 @@ class TFIDF():
                         elif s['text'] != []:
                             vector = list(self.tfidf[i].values())
                             i += 1
-                        self.do_padding(vector, max)
                         s["tfid"] = vector
     
     def recover_documents(self, query):
