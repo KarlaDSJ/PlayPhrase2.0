@@ -1,3 +1,10 @@
 node_modules/
 .vscode/
+<<<<<<< HEAD
 package-lock.json
+=======
+package-lock.json
+.ipynb_checkpoints
+src/__pycache__/*
+pkl/*
+>>>>>>> 28c3d6ee0bec5fbb60158411671fa2563e7041d7
