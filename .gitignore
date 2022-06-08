@@ -2,3 +2,5 @@ node_modules/
 .vscode/
 package-lock.json
 .ipynb_checkpoints
+src/__pycache__/*
+pkl/*
