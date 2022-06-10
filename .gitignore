@@ -5,3 +5,4 @@ notebooks/.ipynb_checkpoints
 src/__pycache__/*
 pkl/*
 .DS_Store
+notebooks/models/sub_doc2vec.model

@@ -76,7 +76,7 @@ Los resultados obtenidos son los siguientes (notebook Metricas.ipynb):
 |TF-IDF sub   |     1     | 0.3012 |  0.4407  | 0.4630 |
 |TF-IDF video |     1     | 0.1458 |  0.3163  | 0.2545 |
 |Levenshtein  |           |        |          |        |
-|Doc2Vec      |           |        |          |        |
+|Doc2Vec      |     1     | 0.3991 |  0.5190  | 0.5705 |
 
 
 <a id="clusters"></a>
