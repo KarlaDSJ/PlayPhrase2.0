@@ -74,6 +74,16 @@ class TFIDF():
         #Lo guardamos
         pickle.dump(self.term_list, open(path, "wb"))
 
+    def __do_padding(self, vector, t):
+        '''
+        Agrega 0 al vector si no es del tamaño t 
+        Args:
+            vector (lst): lista de tamaño diferente
+            t (int): Tamaño esperado del vector
+        '''
+        for _ in range(0, t - len(vector)):
+            vector.append(0)
+
     def get_tfidf(self, path, a=0.5, document=True):
         """
         Realiza el calculo del valor tfidf para cada palabra en el corpus
@@ -130,6 +140,7 @@ class TFIDF():
                                 vector.append(self.tfidf[video['id']][t])
                         elif s['text'] != []:
                             vector = list(self.tfidf[i].values())
+                            self.__do_padding(vector, len(s['text']))
                             i += 1
                         s["tfid"] = vector
     
@@ -150,7 +161,7 @@ class TFIDF():
                     for i,s in enumerate(video['subtitles']):
                         score = 0
                         for w in proc_query:
-                            #Revisa si todos los terminos de la query están en el documento
+                            #Revisa si todos los terminos de la query que están en el documento
                             if w in s["text"]:
                                 index = s["text"].index(w)
                                 score += s["tfid"][index]
