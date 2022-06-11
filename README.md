@@ -9,6 +9,10 @@ Se intentará replicar la página [*PlayPhrase*](https://www.playphrase.me/#/sea
 ### Con ayuda de:
 - Emilio, [*milmor*](https://github.com/milmor)
 - Víctor, [*VMijangos*](https://github.com/VMijangos)
+
+NOTA: Los pkl que faltan se encuentran en la carpeta de drive [*Drive*](https://drive.google.com/drive/folders/16JG81QA06SSf5Cpb2XEEdYcVZvgvhwqn?usp=sharing),  deberán descargarse y colocarse en la carpeta pkl/, y para le modelo de los subtítulos utilizando doc2vec se encuentran en la carpeta de [*Drive*](https://drive.google.com/drive/folders/1WW0oOUMTykjOjphmOCx5CPCcANEThWYm?usp=sharing) ese deberá ir en la carpeta models/
+
+
 ___
 
 <a id="indice"></a>
