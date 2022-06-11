@@ -79,8 +79,9 @@ Los resultados obtenidos son los siguientes (notebook Metricas.ipynb):
 |-------------|-----------|--------|----------|--------|
 |TF-IDF sub   |     1     | 0.3012 |  0.4407  | 0.4630 |
 |TF-IDF video |     1     | 0.1458 |  0.3163  | 0.2545 |
-|Levenshtein  |           |        |          |        |
 |Doc2Vec      |     1     | 0.3991 |  0.5190  | 0.5705 |
+
+De los 4 métodos propuesto podemos observar que el que obtuvo mejores resultados fue el que utilizaba como vectores los generados por Doc2Vec, además otra cosa importante de mencionar es que no pudimos probar el método de Levenshtein con palabras ya que es extremadamente lento.
 
 <a id="clusters"></a>
 ### Agrupación <small>[[Top](#indice)]</small>
@@ -91,4 +92,6 @@ K-means (notebook Agrupar.ipynb)
 - Utilizando Doc2Vec por el título de cada video
 
 Como un intento de analizar los clusters notebook EvalAgrupar.ipynb
+
+Si recuperar información es difícil agrupar lo es aún más, el primer reto a encontrar es la manera de representar las palabras, el segundo es cuántos clusters seleccionar para que se agrupen de manera de decente y lo más importante, cómo saber quer los grupos son buenos, aunque se hicieron 3 intentos no logramos analizarlos :( 
 
